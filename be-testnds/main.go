@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"testnds/src"
 	"time"
 
@@ -16,9 +17,11 @@ type LoginRequest struct {
 func main() {
 	src.ConnectDatabase()
 	r := gin.Default()
+
+	origin := os.Getenv("ORIGIN")
 	
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:5173"},
+		AllowOrigins:     []string{origin},
 		AllowMethods:     []string{"POST"},
 		AllowHeaders:     []string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders:    []string{"Content-Length"},
