@@ -1,4 +1,4 @@
-# Fullstack App (Go + Vite)
+# Simple Login Page React + Golang
 
 Repositori ini berisi source code aplikasi yang terbagi menjadi dua layanan:
 
@@ -16,7 +16,15 @@ Pastikan komputer kamu sudah terinstall:
 
 ## Panduan Instalasi & Menjalankan
 
-### 1. Setup Backend (Golang)
+### 1. Clone Repository
+
+Buka terminal dan jalankan
+
+```bash
+git clone https://github.com/bagasrr/testnds.git
+```
+
+### 2. Setup Backend (Golang)
 
 Buka terminal, masuk ke folder backend, dan setup environment variable.
 
